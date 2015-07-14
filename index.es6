@@ -7,8 +7,18 @@ export default class WorldIfApp extends React.Component {
 
   static get propTypes() {
     return {
-      children: React.PropTypes.node
-    }
+      routeHandler: React.PropTypes.node,
+    };
+  }
+
+  static get defaultProps() {
+    return {
+      routeHandler: this.defaultRouteHandler || React.DOM.div,
+    };
+  }
+
+  static setDefaultRouteHandler(routeHandler) {
+    this.defaultRouteHandler = routeHandler;
   }
 
   render() {
@@ -29,7 +39,7 @@ export default class WorldIfApp extends React.Component {
             </a>
           </div>
         </StickyMasthead>
-        {this.props.children}
+        {this.props.routeHandler}
       </div>
     );
   }
