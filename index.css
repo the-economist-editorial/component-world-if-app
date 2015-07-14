@@ -1,0 +1,67 @@
+@import '@economist/component-stickymasthead';
+@import '@economist/component-sharebar';
+@import '@economist/component-icon';
+
+.Masthead--container > * {
+  display: inline-block;
+}
+
+.WorldIfApp--header {
+  border-bottom: 1px solid var(--WorldIfApp--header--border-color, white);
+}
+
+.WorldIfApp--header-button, .WorldIfApp--header .Masthead--logo {
+  border-right: 1px solid var(--WorldIfApp--header--border-color, white);
+  padding: 13px;
+
+  {
+    &:hover {
+      background: black;
+      cursor: pointer;
+    }
+  }
+}
+
+.WorldIfApp--header-button .Icon, .WorldIfApp--header .Masthead--logo .Icon {
+  padding: 0;
+  width: 40px;
+  height: 40px !important;
+}
+
+.WorldIfApp--header-logo, .WorldIfApp--header-sharebar {
+  float: right;
+}
+
+.WorldIfApp--header-logo-title {
+  display: inline-block;
+  font-size: 50px;
+  color: white;
+  font-family: sans-serif;
+  padding: 5px 20px;
+  margin: 0;
+  vertical-align: top;
+}
+
+.WorldIfApp--header-sharebar-home {
+  padding: 25px;
+  background: rgb(51, 189, 235);
+  vertical-align: middle;
+}
+
+.WorldIfApp--header-sharebar .mnv-ec-share {
+  display: inline-block;
+  padding-top: 10px;
+  {
+    .Icon {
+      border-radius: 50%;
+      background: #929ca2 !important;
+      padding: 10px;
+      width: 25px !important;
+      height: 25px !important;
+    }
+  }
+}
+
+.WorldIfApp--header-sharebar .Icon svg {
+  background: none !important;
+}
