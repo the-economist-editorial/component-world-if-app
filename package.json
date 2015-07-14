@@ -66,8 +66,7 @@
     "@economist/component-icon": "^2.1.0",
     "@economist/component-sharebar": "^1.1.0",
     "@economist/component-stickymasthead": "^2.0.2",
-    "react": "^0.13.3",
-    "react-router": "^0.13.3"
+    "react": "^0.13.3"
   },
   "devDependencies": {
     "@economist/component-devpack": "^2.3.0",

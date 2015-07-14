@@ -5,22 +5,6 @@ import Icon from '@economist/component-icon';
 
 export default class WorldIfApp extends React.Component {
 
-  static get propTypes() {
-    return {
-      routeHandler: React.PropTypes.node,
-    };
-  }
-
-  static get defaultProps() {
-    return {
-      routeHandler: this.defaultRouteHandler || React.DOM.div,
-    };
-  }
-
-  static setDefaultRouteHandler(routeHandler) {
-    this.defaultRouteHandler = routeHandler;
-  }
-
   render() {
     return (
       <div className="WorldIfApp">
@@ -39,7 +23,9 @@ export default class WorldIfApp extends React.Component {
             </a>
           </div>
         </StickyMasthead>
-        {this.props.routeHandler}
+        <div class="WorldIfApp--content" role="main">
+          {this.props.children}
+        </div>
       </div>
     );
   }
