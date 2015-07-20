@@ -68,12 +68,16 @@
     "test:watch": "npm run test:base -- -wR min"
   },
   "dependencies": {
+    "@economist/component-articletemplate": "^2.0.2",
     "@economist/component-font-neutra2": "^1.0.1",
     "@economist/component-icon": "^2.1.5",
     "@economist/component-moremenu": "^1.0.2",
     "@economist/component-sharebar": "^1.1.5",
     "@economist/component-stickymasthead": "^2.0.3",
-    "react": "^0.13.3"
+    "@economist/component-storytiles": "^2.0.1",
+    "react": "^0.13.3",
+    "react-async": "^2.1.0",
+    "react-router-component": "^0.26.0"
   },
   "devDependencies": {
     "@economist/component-devpack": "^2.5.0",
