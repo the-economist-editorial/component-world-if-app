@@ -6,6 +6,13 @@ import MoreMenu from '@economist/component-moremenu';
 
 export default class WorldIfApp extends React.Component {
 
+
+  static get propTypes() {
+    return {
+      children: React.PropTypes.node,
+    };
+  }
+
   render() {
     return (
       <div className="WorldIfApp touch">
@@ -26,7 +33,7 @@ export default class WorldIfApp extends React.Component {
             </a>
           </div>
         </StickyMasthead>
-        <div class="WorldIfApp--content" role="main">
+        <div className="WorldIfApp--content" role="main">
           {this.props.children}
         </div>
       </div>
