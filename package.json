@@ -67,7 +67,7 @@
     "@economist/component-icon": "^2.1.5",
     "@economist/component-moremenu": "^1.0.2",
     "@economist/component-sharebar": "^1.1.5",
-    "@economist/component-stickymasthead": "^2.0.2",
+    "@economist/component-stickymasthead": "^2.0.3",
     "react": "^0.13.3"
   },
   "devDependencies": {
