@@ -2,22 +2,25 @@ import React from 'react';
 import StickyMasthead from '@economist/component-stickymasthead';
 import ShareBar from '@economist/component-sharebar';
 import Icon from '@economist/component-icon';
+import MoreMenu from '@economist/component-moremenu';
 
 export default class WorldIfApp extends React.Component {
 
   render() {
     return (
-      <div className="WorldIfApp">
+      <div className="WorldIfApp touch">
         <StickyMasthead className="WorldIfApp--header">
-          <a className="WorldIfApp--header-menu WorldIfApp--header-button">
-            <Icon icon="hamburger" color="white" background="none"/>
-          </a>
+          <MoreMenu/>
           <a href="/" className="WorldIfApp--header-logo StickyMasthead--hidden">
             <h1 className="WorldIfApp--header-logo-title">The World</h1>
-            <Icon icon="worldif" className="WorldIfApp--header-logo-icon" size="70px"/>
+            <Icon icon="worldif" className="WorldIfApp--header-logo-icon" background="none" size="67px"/>
           </a>
           <div className="WorldIfApp--header-sharebar StickyMasthead--visible">
-            <ShareBar/>
+            <ShareBar useFX={true}
+            fxDirection="flip-to-top"
+            fxType="cube"
+            background="#333333"
+            fxDefaultStateBackground="#999999" />
             <a href="/" className="WorldIfApp--header-sharebar-home">
               <Icon icon="home" color="white" background="rgb(51, 189, 235)" size="25px"/>
             </a>
