@@ -70,7 +70,7 @@
   "dependencies": {
     "@economist/component-404": "^1.0.0",
     "@economist/component-articletemplate": "^3.0.0",
-    "@economist/component-font-neutra2": "^1.0.1",
+    "@economist/component-font-neutra2": "^1.0.3",
     "@economist/component-icon": "^3.0.2",
     "@economist/component-moremenu": "^1.1.0",
     "@economist/component-sharebar": "^1.2.1",

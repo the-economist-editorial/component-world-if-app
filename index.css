@@ -65,6 +65,7 @@
   position: absolute;
   top: 5px;
   left: 11px;
+  fill: #fff;
 }
 
 .WorldIfApp .Masthead .user-more-menu ul {
@@ -159,14 +160,14 @@
   background-color: #000;
 }
 
-.WorldIfApp .share .Icon-share svg {
+.WorldIfApp .share .Icon-share {
   height: 65px !important;
   width: 65px !important;
   left: 0px;
   top: 1px;
 }
 
-.WorldIfApp .close .Icon-close svg{
+.WorldIfApp .close .Icon-close{
   height: 50px !important;
   width: 50px !important;
   left: 9px;
@@ -239,14 +240,14 @@
     width: 35px;
   }
 
-  .WorldIfApp .share .Icon-share svg {
+  .WorldIfApp .share .Icon-share {
     height: 50px !important;
     width: 50px !important;
     left: 0px;
     top: 1px;
   }
 
-  .WorldIfApp .close .Icon-close svg {
+  .WorldIfApp .close .Icon-close {
     height: 50px !important;
     width: 50px !important;
     left: 0px;
@@ -335,14 +336,14 @@
     width: 35px !important;
   }
 
-  .WorldIfApp .share .Icon-share svg {
+  .WorldIfApp .share .Icon-share {
     height: 35px !important;
     width: 35px !important;
     left: 0px;
     top: 1px;
   }
 
-  .WorldIfApp .close .Icon-close svg {
+  .WorldIfApp .close .Icon-close {
     height: 35px !important;
     width: 35px !important;
     left: 0px;
