@@ -5,6 +5,7 @@
 @import '@economist/component-moremenu';
 @import '@economist/component-articletemplate';
 @import '@economist/component-storytiles';
+@import '@economist/component-404';
 
 .Masthead--container > * {
   display: inline-block;

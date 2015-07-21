@@ -7,17 +7,18 @@ import Icon from '@economist/component-icon';
 import MoreMenu from '@economist/component-moremenu';
 import ArticlePage from '@economist/component-articletemplate';
 import HomePage from '@economist/component-storytiles';
+import FourOFourPage from '@economist/component-404';
 
-class NotFoundPage extends React.Component {
-  render() {
-    return (
-      <article>
-        <h1>Oops 404</h1>
-        <a to="home">Back home</a>
-      </article>
-    );
-  }
-}
+// class NotFoundPage extends React.Component {
+//   render() {
+//     return (
+//       <article>
+//         <h1>Oops 404</h1>
+//         <a to="home">Back home</a>
+//       </article>
+//     );
+//   }
+// }
 
 export default class WorldIfApp extends React.Component {
 
@@ -64,7 +65,7 @@ export default class WorldIfApp extends React.Component {
             <Locations ref="router" path={this.props.path || '/'}>
               <Location path="/" handler={HomePage} />
               <Location path="/article/:id" handler={ArticlePage} />
-              <NotFound handler={NotFoundPage}/>
+              <NotFound handler={FourOFourPage}/>
             </Locations>
           </div>
         </CaptureClicks>
