@@ -74,7 +74,7 @@
     "@economist/component-icon": "^3.0.2",
     "@economist/component-moremenu": "^1.1.0",
     "@economist/component-sharebar": "^1.2.1",
-    "@economist/component-stickymasthead": "^2.1.2",
+    "@economist/component-stickymasthead": "^2.2.1",
     "@economist/component-storytiles": "^2.0.1",
     "react": "^0.13.3",
     "react-async": "^2.1.0",
