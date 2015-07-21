@@ -1,8 +1,10 @@
+@import '@economist/component-font-neutra2';
 @import '@economist/component-stickymasthead';
 @import '@economist/component-sharebar';
 @import '@economist/component-icon';
 @import '@economist/component-moremenu';
-@import '@economist/component-font-neutra2';
+@import '@economist/component-articletemplate';
+@import '@economist/component-storytiles';
 
 .Masthead--container > * {
   display: inline-block;
@@ -412,4 +414,3 @@
           display: none; ;
       }
   }
-
