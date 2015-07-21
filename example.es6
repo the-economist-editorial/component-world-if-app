@@ -1,5 +1,5 @@
 import React from 'react';
-import WhatIfApp from './index.es6';
+import WorldIfApp from './index.es6';
 export default (
-  <WhatIfApp/>
+  <WorldIfApp/>
 );
