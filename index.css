@@ -387,4 +387,6 @@
   display: inline-block !important;
 }
 
-.test{}
+.test{
+  background-color: red;
+}
