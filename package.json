@@ -1,6 +1,6 @@
 {
   "name": "@economist/component-world-if-app",
-  "version": "3.0.0",
+  "version": "4.0.2",
   "description": "The What If React App",
   "author": "The Economist (http://economist.com)",
   "license": "MIT",
@@ -68,12 +68,12 @@
     "test:watch": "npm run test:base -- -wR min"
   },
   "dependencies": {
-    "@economist/component-articletemplate": "^2.0.2",
+    "@economist/component-articletemplate": "^3.0.0",
     "@economist/component-font-neutra2": "^1.0.1",
-    "@economist/component-icon": "^2.1.5",
-    "@economist/component-moremenu": "^1.0.2",
-    "@economist/component-sharebar": "^1.1.5",
-    "@economist/component-stickymasthead": "^2.0.3",
+    "@economist/component-icon": "^3.0.2",
+    "@economist/component-moremenu": "^1.1.0",
+    "@economist/component-sharebar": "^1.2.1",
+    "@economist/component-stickymasthead": "^2.1.2",
     "@economist/component-storytiles": "^2.0.1",
     "react": "^0.13.3",
     "react-async": "^2.1.0",
@@ -89,7 +89,6 @@
     "eslint-plugin-filenames": "^0.1.1",
     "eslint-plugin-one-variable-per-var": "^0.0.3",
     "eslint-plugin-react": "^2.6.3",
-    "minifyify": "^7.0.1",
     "mocha": "^2.2.5",
     "npm-assets": "^0.1.0",
     "pre-commit": "^1.0.10"

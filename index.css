@@ -1,8 +1,10 @@
+@import '@economist/component-font-neutra2';
 @import '@economist/component-stickymasthead';
 @import '@economist/component-sharebar';
 @import '@economist/component-icon';
 @import '@economist/component-moremenu';
-@import '@economist/component-font-neutra2';
+@import '@economist/component-articletemplate';
+@import '@economist/component-storytiles';
 
 .WorldIfApp .Masthead--container > * {
   display: inline-block;
@@ -381,5 +383,4 @@
 
 .StickyMasthead.sticky .WorldIfApp--header-sharebar {
   display: inline-block !important;
-
 }
