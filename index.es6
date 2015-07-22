@@ -40,7 +40,7 @@ export default class WorldIfApp extends React.Component {
                 icon="worldif"
                 className="WorldIfApp--header-logo-icon"
                 background="none"
-                size="67px"
+                size="100%"
               />
             </a>
             <div className="WorldIfApp--header-sharebar StickyMasthead--visible">
@@ -56,7 +56,7 @@ export default class WorldIfApp extends React.Component {
                   icon="home"
                   color="white"
                   background="rgb(51, 189, 235)"
-                  size="25px"
+                  size="100%"
                 />
               </a>
             </div>

@@ -46,12 +46,19 @@
   cursor: pointer;
 }
 
-.WorldIfApp .Masthead .Masthead--logo svg {
+.WorldIfApp .Masthead .Masthead--logo .Icon-economist-small {
   height: 26px !important;
-  width: 26px;
+  width: 26px !important;
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+}
+
+.WorldIfApp .Masthead .Icon-worldif {
+  height: 67px !important;
+  width: 67px !important;
 }
 
 .WorldIfApp .Masthead .user-more-menu {
@@ -59,12 +66,14 @@
   position: relative;
 }
 
-.WorldIfApp .Masthead .user-more-menu svg {
+.WorldIfApp .Masthead .user-more-menu .Icon-hamburger {
   height: 56px;
   width: 56px;
   position: absolute;
-  top: 5px;
-  left: 11px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
   fill: #fff;
 }
 
@@ -72,10 +81,13 @@
   height: 100%;
 }
 
-.WorldIfApp .Masthead .user-more-menu ul li:first-child:not(.user-menu, .my-subscription-menu) {
+
+
+.WorldIfApp .Masthead .user-more-menu > ul > li {
   width: 80px;
   height: 100%;
 }
+
 
 .WorldIfApp .Masthead .my-subscription-menu {
   width: 100%;
@@ -90,6 +102,7 @@
   border-right: 1px solid #929ca2;
   border-left: 1px solid #929ca2;
   padding: 0 20px;
+  width: 90px;
 }
 
 .WorldIfApp .Masthead .user-more-menu .subscription-menu:hover {
@@ -133,6 +146,7 @@
 
 .WorldIfApp .WorldIfApp--header-logo, .WorldIfApp--header-sharebar {
   float: right;
+  height: 100%;
 }
 
 .WorldIfApp .WorldIfApp--header-sharebar-home {
@@ -163,31 +177,46 @@
 .WorldIfApp .share .Icon-share {
   height: 65px !important;
   width: 65px !important;
-  left: 0px;
-  top: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
 }
 
 .WorldIfApp .close .Icon-close{
   height: 50px !important;
   width: 50px !important;
-  left: 9px;
-  top: 9px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
 }
 
 .WorldIfApp .cube .default-state {
   display: none;
 }
 
+.WorldIfApp .mnv-ec-share-icons {
+  background: transparent;
+}
+
 .WorldIfApp .mnv-ec-share-icons-container {
   position: absolute;
   top: 0;
-  right: 0px;
-  width: 296px;
+  right: 67px;
+  width: 228px;
   background: linear-gradient(to right, rgba(51,51,51,0) 0%,rgba(51,51,51,1) 10%,rgba(51,51,51,1) 100%);
 }
 
 .WorldIfApp .mnv-ec-share-icons-container a {
    padding-top: 18px;
+   margin-right: 10px !important;
+}
+
+.WorldIfApp .user-more-menu .submenu {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 
@@ -206,18 +235,8 @@
     width: 50px;
   }
 
-  .WorldIfApp .Masthead .Masthead--logo svg {
-    left: 5px;
-    top: 12px;
-  }
-
-  .WorldIfApp .Masthead .user-more-menu ul li:first-child:not(.user-menu, .my-subscription-menu) {
+  .WorldIfApp .Masthead .user-more-menu > ul > li {
     width: 60px;
-  }
-
-  .WorldIfApp .Masthead .user-more-menu svg {
-    top: -3px;
-    left: 2px;
   }
 
   .WorldIfApp .Masthead .user-more-menu .subscription-menu {
@@ -235,6 +254,11 @@
     height: 50px !important;
   }
 
+  .WorldIfApp .Masthead .Icon-worldif {
+    height: 50px !important;
+    width: 50px !important;
+  }
+
   .WorldIfApp .container {
     height: 35px;
     width: 35px;
@@ -242,20 +266,16 @@
 
   .WorldIfApp .share .Icon-share {
     height: 50px !important;
-    width: 50px !important;
-    left: 0px;
-    top: 1px;
   }
 
   .WorldIfApp .close .Icon-close {
     height: 50px !important;
     width: 50px !important;
-    left: 0px;
-    top: 1px;
   }
 
   .WorldIfApp .mnv-ec-share-icons-container {
-    width: 280px;
+    width: 226px;
+    right: 51px;
   }
 
   .WorldIfApp .mnv-ec-share-icons-container a {
@@ -284,26 +304,23 @@
     width: 35px;
   }
 
-  .WorldIfApp .Masthead .Masthead--logo svg {
-    height: 16px;
-    width: 16px;
-    left: 2px;
-    top: 5px;
+  .WorldIfApp .Masthead .Masthead--logo .Icon-economist-small {
+    height: 16px !important;
+    width: 16px !important;
   }
 
-  .WorldIfApp .Masthead .user-more-menu ul li:first-child:not(.user-menu, .my-subscription-menu) {
+  .WorldIfApp .Masthead .user-more-menu > ul > li {
     width: 35px;
   }
 
-  .WorldIfApp .Masthead .user-more-menu svg {
+  .WorldIfApp .Masthead .user-more-menu .Icon-hamburger {
     height: 40px;
     width: 40px;
-    top: -3px;
-    left: -2px;
   }
 
   .WorldIfApp .Masthead .user-more-menu .subscription-menu {
     padding: 0 5px;
+    width: 72px;
   }
 
   .WorldIfApp .Masthead .user-more-menu .subscription-menu a{
@@ -318,13 +335,19 @@
     width: 35px !important;
   }
 
+  .WorldIfApp .Masthead .Icon-worldif {
+    height: 35px !important;
+    width: 35px !important;
+  }
+
   .WorldIfApp .WorldIfApp--header-sharebar-home .Icon-home{
     width: 35px !important;
     height: 35px !important;
   }
 
   .WorldIfApp .mnv-ec-share-icons-container {
-    width: 235px;
+    width: 200px;
+    right: 37px;
   }
 
   .WorldIfApp .mnv-ec-share-icons-container a {
@@ -339,15 +362,11 @@
   .WorldIfApp .share .Icon-share {
     height: 35px !important;
     width: 35px !important;
-    left: 0px;
-    top: 1px;
   }
 
   .WorldIfApp .close .Icon-close {
     height: 35px !important;
     width: 35px !important;
-    left: 0px;
-    top: 1px;
   }
 
   .WorldIfApp .mnv-ec-share-icons .Icon {
@@ -372,6 +391,12 @@
   }
 }
 
+@media (max-width: 320px) {
+  .WorldIfApp .log-in-btn {
+    width: 88%;
+  }
+}
+
 
 @media (max-width: 318px) {
   .WorldIfApp--header-logo-title {
@@ -387,6 +412,10 @@
   display: inline-block !important;
 }
 
-.test{
-  background-color: red;
+
+@media (max-width: 800px) {
+  .mnv-ec-share.cube {
+    height: 100%;
+    cursor: pointer;
+  }
 }
