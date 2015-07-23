@@ -66,6 +66,10 @@
   position: relative;
 }
 
+.WorldIfApp .Masthead .user-more-menu .menu {
+  z-index: 1000;
+}
+
 .WorldIfApp .Masthead .user-more-menu .Icon-hamburger {
   height: 56px;
   width: 56px;
@@ -379,7 +383,7 @@
     width: calc(100vw - 13px);
   }
   .WorldIfApp .log-in-btn {
-    width: 91%;
+    width: calc(100% - 26px);
   }
 }
 
@@ -388,13 +392,6 @@
     font-size:  13px;
   }
 }
-
-@media (max-width: 320px) {
-  .WorldIfApp .log-in-btn {
-    width: 88%;
-  }
-}
-
 
 @media (max-width: 318px) {
   .WorldIfApp--header-logo-title {
