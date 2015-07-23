@@ -75,7 +75,7 @@
     "@economist/component-moremenu": "^1.1.7",
     "@economist/component-sharebar": "^1.2.6",
     "@economist/component-stickymasthead": "^2.2.4",
-    "@economist/component-storytiles": "^2.0.1",
+    "@economist/component-storytiles": "^2.0.2",
     "fastclick": "^1.0.6",
     "react": "^0.13.3",
     "react-async": "^2.1.0",
