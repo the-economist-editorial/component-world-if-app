@@ -45,7 +45,6 @@ export default class WorldIfApp extends React.Component {
             </a>
             <div className="WorldIfApp--header-sharebar StickyMasthead--visible touch">
               <ShareBar
-                useFX={true}
                 fxDirection="flip-to-top"
                 fxType="cube"
                 background="#333333"
