@@ -9,6 +9,8 @@ import ArticlePage from '@economist/component-articletemplate';
 import HomePage from '@economist/component-storytiles';
 import FourOFourPage from '@economist/component-404';
 
+/* global window: false */
+
 // class NotFoundPage extends React.Component {
 //   render() {
 //     return (
@@ -25,7 +27,14 @@ export default class WorldIfApp extends React.Component {
   static get propTypes() {
     return {
       path: React.PropTypes.string.isRequired,
+      onClose: React.PropTypes.func,
+      onOpen: React.PropTypes.func,
     };
+  }
+
+  constructor() {
+    super();
+    this.state = { open: false };
   }
 
   scrollToTop() {
@@ -37,6 +46,29 @@ export default class WorldIfApp extends React.Component {
         timer(animateScroll, 1);
       }
     });
+  }
+
+  toggleActive() {
+    if (this.state.open) {
+      this.close();
+    } else {
+      this.open();
+    }
+  }
+
+  close() {
+    this.setState({ open: false });
+    React.findDOMNode(this.refs.body).scrollTop = 0;
+    if (this.props.onClose) {
+      this.props.onClose(this);
+    }
+  }
+
+  open() {
+    this.setState({ open: true });
+    if (this.props.onOpen) {
+      this.props.onOpen(this);
+    }
   }
 
   render() {
@@ -54,7 +86,8 @@ export default class WorldIfApp extends React.Component {
                 size="100%"
               />
             </a>
-            <div className="WorldIfApp--header-sharebar StickyMasthead--visible touch">
+            <div className="WorldIfApp--header-sharebar StickyMasthead--visible touch"
+            data-open={this.state.open} onClick={this.toggleActive.bind(this)}>
               <ShareBar
                 fxDirection="flip-to-top"
                 fxType="cube"
@@ -82,5 +115,4 @@ export default class WorldIfApp extends React.Component {
       </div>
     );
   }
-
 }

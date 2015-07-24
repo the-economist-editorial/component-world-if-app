@@ -64,7 +64,7 @@
 .WorldIfApp .Masthead .user-more-menu {
   height: 100%;
   position: relative;
-  z-index: 10;
+  z-index: 5;
 }
 
 .WorldIfApp .Masthead .user-more-menu .menu {
@@ -434,12 +434,10 @@
 
   .WorldIfApp .mnv-ec-share-icons .Icon {
     padding: 0 !important;
-/*    width: 30px !important;
-    height: 30px !important;*/
   }
 
   .WorldIfApp .user-more-menu .submenu {
-    left: -36px;
+    left: -47px;
     width: calc(100vw - 13px);
   }
   .WorldIfApp .log-in-btn {
@@ -561,4 +559,13 @@
   .mnv-ec-share-icons-container-inner {
     left: 0;
   }
+}
+
+
+.WorldIfApp--header-sharebar[data-open="true"] {
+  z-index: 6;
+}
+
+.WorldIfApp--header-sharebar[data-open="false"] {
+  z-index: 0;
 }
