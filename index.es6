@@ -75,7 +75,7 @@ export default class WorldIfApp extends React.Component {
     return (
       <div className="WorldIfApp">
         <CaptureClicks>
-          <StickyMasthead className="WorldIfApp--header">
+          <StickyMasthead className="WorldIfApp--header" topOffset="1">
             <MoreMenu/>
             <a href="/" className="WorldIfApp--header-logo StickyMasthead--hidden">
               <h1 className="WorldIfApp--header-logo-title">The World</h1>
