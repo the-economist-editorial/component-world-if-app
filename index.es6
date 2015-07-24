@@ -28,6 +28,17 @@ export default class WorldIfApp extends React.Component {
     };
   }
 
+  scrollToTop() {
+    const timer = window.requestAnimationFrame || window.setTimeout;
+    const body = window.document.body;
+    timer(function animateScroll() {
+      body.scrollTop -= Math.max(body.scrollTop / 100, 20);
+      if (body.scrollTop > 0) {
+        timer(animateScroll, 1);
+      }
+    });
+  }
+
   render() {
     return (
       <div className="WorldIfApp">
@@ -61,7 +72,7 @@ export default class WorldIfApp extends React.Component {
             </div>
           </StickyMasthead>
           <div className="WorldIfApp--content" role="main">
-            <Locations ref="router" path={this.props.path || '/'}>
+            <Locations ref="router" path={this.props.path || '/'} onNavigation={this.scrollToTop}>
               <Location path="/" handler={HomePage} />
               <Location path="/article/:id" handler={ArticlePage} />
               <NotFound handler={FourOFourPage}/>
