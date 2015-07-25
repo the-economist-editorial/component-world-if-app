@@ -34,14 +34,14 @@
   position: relative;
 }
 
-.WorldIfApp .Masthead .Masthead--logo {
+.WorldIfApp .Masthead--logo {
   width: 80px;
   height: 100%;
   border-right: 1px solid #929ca2;
   position: relative;
 }
 
-.WorldIfApp .Masthead .Masthead--logo:hover {
+.WorldIfApp .Masthead--logo:hover {
   background: black;
   cursor: pointer;
 }
@@ -56,9 +56,9 @@
   padding: 0;
 }
 
-.WorldIfApp .Masthead .Icon-worldif {
-  height: 67px !important;
-  width: 67px !important;
+.WorldIfApp .Icon-worldif {
+  height: 67px;
+  width: 67px;
 }
 
 .WorldIfApp .Masthead .user-more-menu {
@@ -69,6 +69,10 @@
 
 .WorldIfApp .Masthead .user-more-menu .menu {
   z-index: 1000;
+}
+
+.WorldIfApp .user-more-menu .submenu {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 .WorldIfApp .Masthead .user-more-menu .Icon-hamburger {
@@ -112,174 +116,132 @@
   background-color: #000;
 }
 
-.WorldIfApp .my-subscription-menu ul li:hover, .more-from-economist-menu ul li:hover {
+.WorldIfApp .my-subscription-menu ul li:hover, 
+.more-from-economist-menu ul li:hover {
   text-decoration: underline;
 }
 
-.WorldIfApp--header-sharebar .Icon svg {
+.WorldIfApp--header-sharebar {
   width: 100%;
-  height: 100%;
-
+  position: absolute;
+  right: 0;
 }
 
-.WorldIfApp .WorldIfApp--header-sharebar-home {
+.WorldIfApp .Icon-home {
+  width: 67px;
+  height: 67px;
+  background-color: #38A8E0 !important;
+}
+
+.WorldIfApp .WorldIfApp--header-logo, 
+.WorldIfApp--header-sharebar {
+  float: right;
+  height: 100%;
+}
+
+.WorldIfApp--header-sharebar-home {
+  position: absolute;
+  right: 0;
   background-color: transparent;
   padding: 0;
 }
 
-.WorldIfApp .WorldIfApp--header-sharebar-home .Icon-home{
-  width: 67px !important;
-  height: 67px !important;
-  background-color: #38A8E0 !important;
-}
-
-.WorldIfApp .mnv-ec-share-icons .Icon{
-  position: relative;
-  padding: 0 !important;
-/*  width: 46px !important;
-  height: 46px !important;*/
-  border-radius: 50%;
-  background: #929ca2 !important;
-}
-
-.WorldIfApp .mnv-ec-share-icons .Icon svg{
-  border-radius: 50%;
-}
-
-.WorldIfApp .WorldIfApp--header-logo, .WorldIfApp--header-sharebar {
-  float: right;
-  height: 100%;
-}
-
-.WorldIfApp .WorldIfApp--header-sharebar-home {
-  float: right;
-}
-
-.WorldIfApp .WorldIfApp--header-sharebar .Icon svg {
-  background: none !important;
-}
-
-.WorldIfApp .container {
+.WorldIfApp--header-sharebar .container {
   float: left;
   height: 67px;
-  width: 67px;
-}
-
-.WorldIfApp .controls {
-  height: 100%;
   width: 100%;
-  background-color: #5D5D5D;
 }
 
-.WorldIfApp .controls:hover {
+.WorldIfApp--header .controls {
+  height: 100%;
+  width: 68px;
+  background-color: #5D5D5D;
+  position: absolute;
+  right: 67px;
+}
+
+.WorldIfApp--header .controls:hover {
   cursor: pointer;
   background-color: #000;
 }
 
-.WorldIfApp .share .Icon-share {
-  height: 65px !important;
-  width: 65px !important;
+.WorldIfApp--header .Icon-share,
+.WorldIfApp--header .Icon-close {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 0;
 }
 
-.WorldIfApp .close .Icon-close{
-  height: 50px !important;
-  width: 50px !important;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0;
-}
-
-.WorldIfApp .cube .default-state {
-  display: none;
-}
-
-.WorldIfApp .mnv-ec-share-icons {
+.WorldIfApp--header .mnv-ec-share-icons {
   background: transparent !important;
 }
 
-.WorldIfApp .mnv-ec-share-icons-container {
-/*  position: absolute;
-  top: 0;
-  right: 67px;
-  width: 290px;*/
+.WorldIfApp--header .mnv-ec-share-icons a {
+  border-radius: 50%;
+  background: #929ca2;
+  margin: 14px 0 0 10px;
+}
+
+.WorldIfApp--header .mnv-ec-share-icons-container {
   height: 68px;
   background: linear-gradient(to right, rgba(51,51,51,0) 0%,rgba(51,51,51,1) 10%,rgba(51,51,51,1) 100%);
   background-color: #333;
+  width: calc(100% - 121px);
 }
 
-.WorldIfApp .mnv-ec-share-icons-container a {
-/*   padding-top: 10px;*/
-   margin-right: 10px !important;
+.WorldIfApp .mnv-ec-share-icons-container {
+  width: calc(100% - 217px);
+  position: absolute;
+  left: 81px;
 }
 
-.WorldIfApp .user-more-menu .submenu {
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+.WorldIfApp--header .mnv-ec-share-icons-container-inner {
+  width: auto;
+  position: absolute;
+  right: 10px;
 }
 
-.WorldIfApp .user-more-menu .log-in-btn {
-  margin: 0;
-}
-
-
-.mnv-ec-share-icons {
-  position: relative;
-}
-.WorldIfApp .cube {
-  height: auto;
-}
-.WorldIfApp .fxOn{
-  height: 36px;
-}
-.WorldIfApp .fxOff{
-  height: auto;
-}
-
-.WorldIfApp .mnv-ec-share-icons a {
-  border-radius: 50%;
-  background: #929ca2 !important;
-  margin: 14px 0 0 10px !important;
-}
-.WorldIfApp .mnv-ec-share-icons a,
-.WorldIfApp .mnv-ec-share-icons svg {
+.WorldIfApp--header .mnv-ec-share-icons a,
+.WorldIfApp--header .mnv-ec-share-icons svg {
   width: 40px;
   height: 40px
 }
 
 .WorldIfApp .mnv-ec-share-icons .fb:hover {
-  background: #3b5998 !important;
+  background: #3b5998;
 }
+
 .WorldIfApp .mnv-ec-share-icons .twitter:hover {
-  background: #00aced !important;
+  background: #00aced;
 }
+
 .WorldIfApp .mnv-ec-share-icons .gplus:hover {
-  background: #dd4b39 !important;
+  background: #dd4b39;
 }
+
 .WorldIfApp .mnv-ec-share-icons .linkedin:hover {
-  background: #007bb6 !important;
+  background: #007bb6;
 }
+
 .WorldIfApp .mnv-ec-share-icons .whatsapp:hover {
-  background: #39b54a !important;
+  background: #39b54a;
 }
+
 .WorldIfApp .mnv-ec-share-icons .mail:hover {
-  background: #666666 !important;
+  background: #666666;
 }
+
 .WorldIfApp .mnv-ec-share-icons .Icon {
   border-radius: 50%;
-  background: none !important;
-}
-.WorldIfApp .mnv-ec-share-icons svg {
-  background: none !important;
 }
 
-
-
+@media (max-width: 800px) {
+  .mnv-ec-share.cube {
+    height: 100%;
+    cursor: pointer;
+  }
+}
 
 @media (max-width: 680px) {
 
@@ -305,49 +267,30 @@
     padding: 0 10px;
   }
 
-  .WorldIfApp--header-logo-icon {
-    height: 50px !important;
-    width: 50px !important;
-  }
-
-  .WorldIfApp .WorldIfApp--header-sharebar-home .Icon-home{
-    width: 50px !important;
-    height: 50px !important;
-  }
-
-  .WorldIfApp .Masthead .Icon-worldif {
-    height: 50px !important;
-    width: 50px !important;
-  }
-
-  .WorldIfApp .container {
-    height: 46px;
-    width: 46px;
-  }
-
-  .WorldIfApp .share .Icon-share {
-    height: 50px !important;
-  }
-
-  .WorldIfApp .close .Icon-close {
-    height: 50px !important;
-    width: 50px !important;
-    z-index:  9999;
-  }
-
-  .WorldIfApp .mnv-ec-share-icons-container {
-    width: 290px;
-    right: 51px;
+  .WorldIfApp .Icon-home{
+    width: 50px;
     height: 50px;
   }
 
-  .WorldIfApp .mnv-ec-share-icons-container a {
-/*    padding-top: 2px;*/
+  .WorldIfApp .Icon-worldif {
+    height: 50px;
+    width: 50px;
   }
 
-  .WorldIfApp .controls {
-    height: 50px !important;
-    width: 50px !important;
+  .WorldIfApp--header .mnv-ec-share-icons-container {
+    height: 50px;
+    width: calc(100% - 152px);
+    left: 51px;
+  }
+
+  .WorldIfApp--header .controls {
+    height: 50px;
+    width: 50px;
+    right: 50px;
+  }
+
+  .WorldIfApp--header .mnv-ec-share-icons a {
+    margin: 5px 0 0 12px;
   }
 }
 
@@ -392,44 +335,32 @@
     left: 8px;
   }
 
-  .WorldIfApp--header-logo-icon {
-    height: 46px !important;
-    width: 46px !important;
+  .WorldIfApp .Icon-worldif {
+    height: 46px;
+    width: 46px;
   }
 
-  .WorldIfApp .Masthead .Icon-worldif {
-    height: 46px !important;
-    width: 46px !important;
-  }
-
-  .WorldIfApp .WorldIfApp--header-sharebar-home .Icon-home{
-    width: 46px !important;
-    height: 46px !important;
-  }
-
-  .WorldIfApp .mnv-ec-share-icons-container {
-    width: 210px;
-    right: 45px;
+  .WorldIfApp .Icon-home{
+    width: 46px;
     height: 46px;
   }
 
-  .WorldIfApp .mnv-ec-share-icons-container a {
-/*    padding-top: 8px;*/
+  .WorldIfApp--header .mnv-ec-share-icons-container {
+    height: 46px;
+    width: calc(100% - 60px);
+    left: 0;
   }
 
-  .WorldIfApp .controls {
-    height: 46px !important;
-    width: 46px !important;
+  .WorldIfApp--header .controls {
+    height: 46px;
+    width: 46px;
+    right: 46px;
   }
 
-  .WorldIfApp .share .Icon-share {
-    height: 46px !important;
-    width: 46px !important;
-  }
-
+  .WorldIfApp .share .Icon-share,
   .WorldIfApp .close .Icon-close {
-    height: 46px !important;
-    width: 46px !important;
+    height: 46px;
+    width: 46px;
   }
 
   .WorldIfApp .mnv-ec-share-icons .Icon {
@@ -442,6 +373,23 @@
   }
   .WorldIfApp .log-in-btn {
     width: calc(100% - 26px);
+  }
+
+  .WorldIfApp .mnv-ec-share-icons a {
+    margin: 6px 0 0 6px !important;
+  }
+
+  .WorldIfApp .mnv-ec-share-icons a, 
+  .WorldIfApp .mnv-ec-share-icons svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .WorldIfApp .mnv-ec-share-icons-container {
+    
+  }
+  .WorldIfApp--header .mnv-ec-share-icons-container-inner {
+    left: 0;
   }
 }
 
@@ -464,103 +412,6 @@
 .StickyMasthead.sticky .WorldIfApp--header-sharebar {
   display: inline-block !important;
 }
-
-@media (max-width: 800px) {
-  .mnv-ec-share.cube {
-    height: 100%;
-    cursor: pointer;
-  }
-}
-
-
-
-
-/**/
-
-.WorldIfApp--header-sharebar {
-  width: 100%;
-  position: absolute;
-  right: 0;
-}
-
-.WorldIfApp .container {
-  width: 100%;
-}
-
-.WorldIfApp .controls {
-  height: 100%;
-  width: 68px;
-  background-color: #5D5D5D;
-  position: absolute;
-  right: 67px;
-}
-
-.WorldIfApp .WorldIfApp--header-sharebar-home {
-  position: absolute;
-  right: 0;
-}
-
-.WorldIfApp .mnv-ec-share-icons-container {
-  width: calc(100% - 121px);
-
-}
-
-.WorldIfApp .mnv-ec-share-icons-container {
-  width: calc(100% - 217px);
-  position: absolute;
-  left: 81px;
-}
-
-.WorldIfApp .mnv-ec-share-icons a {
-  border-radius: 50%;
-  background: #929CA2 !important;
-  margin: 14px 0 0 12px !important;
-}
-
-.mnv-ec-share-icons-container-inner {
-  width: auto;
-  position: absolute;
-  right: 10px;
-}
-
-
-@media (max-width: 680px) {
-  .WorldIfApp .mnv-ec-share-icons a {
-    margin: 5px 0 0 12px !important;
-  }
-
-  .WorldIfApp .controls {
-    right: 50px;
-  }
-
-  .WorldIfApp .mnv-ec-share-icons-container {
-    width: calc(100% - 152px);
-    left: 51px;
-  }
-}
-
- @media (max-width: 540px) {
-  .WorldIfApp .mnv-ec-share-icons a {
-    margin: 6px 0 0 6px !important;
-  }
-  .WorldIfApp .controls {
-    right: 46px;
-  }
-
-  .WorldIfApp .mnv-ec-share-icons a, .WorldIfApp .mnv-ec-share-icons svg {
-    width: 35px;
-    height: 35px;
-  }
-
-  .WorldIfApp .mnv-ec-share-icons-container {
-    width: calc(100% - 60px);
-    left: 0;
-  }
-  .mnv-ec-share-icons-container-inner {
-    left: 0;
-  }
-}
-
 
 .WorldIfApp--header-sharebar[data-open="true"] {
   z-index: 6;
