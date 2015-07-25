@@ -357,13 +357,13 @@
     right: 46px;
   }
 
-  .WorldIfApp .share .Icon-share,
-  .WorldIfApp .close .Icon-close {
+  .WorldIfApp--header .Icon-share,
+  .WorldIfApp--header .Icon-close {
     height: 46px;
     width: 46px;
   }
 
-  .WorldIfApp .mnv-ec-share-icons .Icon {
+  .WorldIfApp--header .mnv-ec-share-icons .Icon {
     padding: 0 !important;
   }
 
@@ -375,17 +375,17 @@
     width: calc(100% - 26px);
   }
 
-  .WorldIfApp .mnv-ec-share-icons a {
+  .WorldIfApp--header .mnv-ec-share-icons a {
     margin: 6px 0 0 6px !important;
   }
 
-  .WorldIfApp .mnv-ec-share-icons a, 
-  .WorldIfApp .mnv-ec-share-icons svg {
+  .WorldIfApp--header .mnv-ec-share-icons a, 
+  .WorldIfApp--header .mnv-ec-share-icons svg {
     width: 35px;
     height: 35px;
   }
 
-  .WorldIfApp .mnv-ec-share-icons-container {
+  .WorldIfApp--header .mnv-ec-share-icons-container {
     
   }
   .WorldIfApp--header .mnv-ec-share-icons-container-inner {
