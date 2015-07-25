@@ -190,7 +190,7 @@
   width: calc(100% - 121px);
 }
 
-.WorldIfApp .mnv-ec-share-icons-container {
+.WorldIfApp--header .mnv-ec-share-icons-container {
   width: calc(100% - 217px);
   position: absolute;
   left: 81px;
