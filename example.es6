@@ -1,5 +1,5 @@
 import React from 'react';
 import WorldIfApp from './index.es6';
 export default (
-  <WorldIfApp path="/article/1" />
+  <WorldIfApp path="/404" />
 );

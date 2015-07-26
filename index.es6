@@ -9,19 +9,6 @@ import ArticlePage from '@economist/component-articletemplate';
 import HomePage from '@economist/component-storytiles';
 import FourOFourPage from '@economist/component-404';
 
-/* global window: false */
-
-// class NotFoundPage extends React.Component {
-//   render() {
-//     return (
-//       <article>
-//         <h1>Oops 404</h1>
-//         <a to="home">Back home</a>
-//       </article>
-//     );
-//   }
-// }
-
 export default class WorldIfApp extends React.Component {
 
   static get propTypes() {
@@ -38,14 +25,7 @@ export default class WorldIfApp extends React.Component {
   }
 
   scrollToTop() {
-    const timer = window.requestAnimationFrame || window.setTimeout;
-    const body = window.document.body;
-    timer(function animateScroll() {
-      body.scrollTop -= Math.max(body.scrollTop / 100, 20);
-      if (body.scrollTop > 0) {
-        timer(animateScroll, 1);
-      }
-    });
+    React.findDOMNode(this.refs.body).scrollTop = 0;
   }
 
   toggleActive() {
