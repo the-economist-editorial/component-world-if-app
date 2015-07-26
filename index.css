@@ -17,11 +17,10 @@
 }
 
 .WorldIfApp--header-logo-title {
-  font-family: Neutra2Display !important;
+  font-family: Neutra2Display-Titling;
   display: inline-block;
   font-size: 37px;
   color: white;
-  font-family: sans-serif;
   padding: 5px 10px;
   margin: 0;
   vertical-align: top;
