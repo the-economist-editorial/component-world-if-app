@@ -25,7 +25,15 @@ export default class WorldIfApp extends React.Component {
   }
 
   scrollToTop() {
-    React.findDOMNode(this.refs.body).scrollTop = 0;
+    // const timer = window.requestAnimationFrame || window.setTimeout;
+    const body = window.document.body;
+    // timer(function animateScroll() {
+    //   body.scrollTop -= Math.max(body.scrollTop / 100, 20);
+    //   if (body.scrollTop > 0) {
+    //     timer(animateScroll, 1);
+    //   }
+    // });
+    body.scrollTop = 0;
   }
 
   toggleActive() {
