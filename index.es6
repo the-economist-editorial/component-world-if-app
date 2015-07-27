@@ -24,11 +24,6 @@ export default class WorldIfApp extends React.Component {
     this.state = { open: false };
   }
 
-  scrollToTop() {
-    const body = window.document.body;
-    body.scrollTop = 0;
-  }
-
   toggleActive() {
     if (this.state.open) {
       this.close();
@@ -39,7 +34,6 @@ export default class WorldIfApp extends React.Component {
 
   close() {
     this.setState({ open: false });
-    React.findDOMNode(this.refs.body).scrollTop = 0;
     if (this.props.onClose) {
       this.props.onClose(this);
     }
