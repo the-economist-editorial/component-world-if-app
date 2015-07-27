@@ -89,6 +89,7 @@ export default class WorldIfApp extends React.Component {
             <Locations ref="router" path={this.props.path || '/'} onNavigation={this.scrollToTop}>
               <Location path="/" handler={HomePage} />
               <Location path="/article/:id" handler={ArticlePage} />
+              <Location path="/article/:id/:slug" handler={ArticlePage} />
               <NotFound handler={FourOFourPage}/>
             </Locations>
           </div>
