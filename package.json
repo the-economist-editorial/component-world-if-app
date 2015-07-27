@@ -1,10 +1,6 @@
 {
   "name": "@economist/component-world-if-app",
-<<<<<<< HEAD
-  "version": "4.8.6",
-=======
   "version": "5.0.0",
->>>>>>> 1c00e022dd29958e01754ebb70d7a155e5e432b0
   "description": "The What If React App",
   "author": "The Economist (http://economist.com)",
   "license": "MIT",
