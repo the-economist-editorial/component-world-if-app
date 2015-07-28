@@ -74,7 +74,8 @@ export default class WorldIfApp extends React.Component {
                 background="#333333"
                 fxDefaultStateBackground="#999999"
               />
-              <a href="/" className="WorldIfApp--header-sharebar-home">
+            </div>
+            <a href="/" className="WorldIfApp--header-sharebar-home">
                 <Icon
                   icon="home"
                   color="white"
@@ -82,7 +83,6 @@ export default class WorldIfApp extends React.Component {
                   size="100%"
                 />
               </a>
-            </div>
           </StickyMasthead>
           <div className="WorldIfApp--content" role="main">
             <Locations ref="router" path={this.props.path || '/'} onNavigation={this.scrollToTop}>
