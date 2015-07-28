@@ -46,6 +46,11 @@ export default class WorldIfApp extends React.Component {
     }
   }
 
+  scrollToTop() {
+    const body = window.document.body;
+    body.scrollTop = 0;
+  }
+
   render() {
     return (
       <div className="WorldIfApp">
