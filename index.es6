@@ -24,38 +24,6 @@ export default class WorldIfApp extends React.Component {
     this.state = { open: false };
   }
 
-  toggleActive(event) {
-    if (event.preventDefault) {
-      event.preventDefault();
-    } else {
-      event.returnValue = false;
-    }
-    if (event.stopPropagation) {
-      event.stopPropagation();
-    } else {
-      event.returnValue = false;
-    }
-    if (this.state.open) {
-      this.close();
-    } else {
-      this.open();
-    }
-  }
-
-  close() {
-    this.setState({ open: false });
-    if (this.props.onClose) {
-      this.props.onClose(this);
-    }
-  }
-
-  open() {
-    this.setState({ open: true });
-    if (this.props.onOpen) {
-      this.props.onOpen(this);
-    }
-  }
-
   scrollToTop() {
     const body = window.document.body;
     body.scrollTop = 0;
@@ -76,8 +44,7 @@ export default class WorldIfApp extends React.Component {
               />
             </a>
             <div className="WorldIfApp--header-sharebar StickyMasthead--visible touch">
-              <div className="WorldIfApp--header-sharebar-container" data-open={this.state.open}
-              onClick={this.toggleActive.bind(this)}>
+              <div className="WorldIfApp--header-sharebar-container">
                 <ShareBar
                   fxDirection="flip-to-top"
                   fxType="cube"
