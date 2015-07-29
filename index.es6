@@ -24,7 +24,17 @@ export default class WorldIfApp extends React.Component {
     this.state = { open: false };
   }
 
-  toggleActive() {
+  toggleActive(event) {
+    if (event.preventDefault) {
+      event.preventDefault();
+    } else {
+      event.returnValue = false;
+    }
+    if (event.stopPropagation) {
+      event.stopPropagation();
+    } else {
+      event.returnValue = false;
+    }
     if (this.state.open) {
       this.close();
     } else {
@@ -54,7 +64,6 @@ export default class WorldIfApp extends React.Component {
   render() {
     return (
       <div className="WorldIfApp">
-        <CaptureClicks>
           <StickyMasthead className="WorldIfApp--header" topOffset="1">
             <MoreMenu/>
             <a href="/" className="WorldIfApp--header-logo StickyMasthead--hidden">
@@ -66,16 +75,16 @@ export default class WorldIfApp extends React.Component {
                 size="100%"
               />
             </a>
-            <div className="WorldIfApp--header-sharebar StickyMasthead--visible touch"
-            data-open={this.state.open} onClick={this.toggleActive.bind(this)}>
-              <ShareBar
-                fxDirection="flip-to-top"
-                fxType="cube"
-                background="#333333"
-                fxDefaultStateBackground="#999999"
-              />
-            </div>
-            <a href="/" className="WorldIfApp--header-sharebar-home">
+            <div className="WorldIfApp--header-sharebar StickyMasthead--visible touch">
+              <div className="WorldIfApp--header-sharebar-container" data-open={this.state.open}
+              onClick={this.toggleActive.bind(this)}>
+                <ShareBar
+                  fxDirection="flip-to-top"
+                  fxType="cube"
+                  background="#333333"
+                  fxDefaultStateBackground="#999999"/>
+              </div>
+              <a href="/" className="WorldIfApp--header-sharebar-home">
                 <Icon
                   icon="home"
                   color="white"
@@ -83,7 +92,9 @@ export default class WorldIfApp extends React.Component {
                   size="100%"
                 />
               </a>
+            </div>
           </StickyMasthead>
+        <CaptureClicks>
           <div className="WorldIfApp--content" role="main">
             <Locations ref="router" path={this.props.path || '/'} onNavigation={this.scrollToTop}>
               <Location path="/" handler={HomePage} />
