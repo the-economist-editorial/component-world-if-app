@@ -23,10 +23,9 @@
   max-width: 1190px;
   margin: 0 auto;
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999999999;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
 }
 
 .WorldIfApp .Masthead--container > * {
@@ -387,8 +386,8 @@
 
   .WorldIfApp--header .mnv-ec-share-icons-container {
     height: 46px;
-    width: 250px;
-    left: 20px;
+    width: 200px;
+    left: 10px;
   }
 
   .WorldIfApp--header .controls {
