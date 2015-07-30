@@ -287,6 +287,10 @@
 
 @media (max-width: 680px) {
 
+  .WorldIfApp {
+    margin: 50px auto 0;
+  }
+
   .WorldIfApp--header-logo-title {
     font-size: 28px;
     line-height: 44px;
@@ -354,6 +358,10 @@
 
 
  @media (max-width: 540px) {
+  .WorldIfApp {
+    margin: 46px auto 0;
+  }
+
   .WorldIfApp--header-logo-title {
     font-size:  16px;
     line-height: 36px;
