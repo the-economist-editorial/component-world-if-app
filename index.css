@@ -14,18 +14,32 @@
 
 .WorldIfApp {
   max-width: 1190px;
-  margin: 0 auto;
+  margin: 67px auto 0;
   position: relative;
   width: 100%;
 }
 
-.WorldIfApp .StickyMasthead {
+.WorldIfApp--header {
   max-width: 1190px;
-  margin: 0 auto;
   width: 100%;
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  left: calc(50% - 595px) !important;
   transform: translate3d(0, 0, 0);
   will-change: transform;
+  z-index: 9999999999;
+}
+
+@media (max-width: 1190px) {
+  .WorldIfApp--header {
+    left: 0 !important;
+  }
+}
+
+.WorldIfApp--header.sticky {
+  margin-top: 0;
 }
 
 .WorldIfApp .Masthead--container > * {
