@@ -88,6 +88,7 @@
 
 .WorldIfApp .Masthead .user-more-menu .menu {
   z-index: 1000;
+  outline: 0;
 }
 
 .WorldIfApp .user-more-menu .submenu {
