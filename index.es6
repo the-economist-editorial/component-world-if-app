@@ -26,8 +26,7 @@ export default class WorldIfApp extends React.Component {
 
   scrollToTop() {
     if (typeof window !== 'undefined' && window.document) {
-      const body = window.document.documentElement || window.document.body;
-      body.scrollTop = 0;
+      window.scrollTo(0, 0);
     }
   }
 
