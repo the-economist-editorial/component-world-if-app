@@ -234,19 +234,9 @@
 }
 
 .WorldIfApp--header .mnv-ec-share-icons-container {
-/*  width: calc(100% - 290px);
-  position: absolute;
-  left: 0px;*/
   width: 353px;
-
 }
 
-/*.WorldIfApp--header .mnv-ec-share-icons-container-inner {
-  width: auto;
-  position: absolute;
-  right: 10px;
-}
-*/
 .WorldIfApp--header .mnv-ec-share-icons a,
 .WorldIfApp--header .mnv-ec-share-icons svg {
   width: 40px;
@@ -358,9 +348,6 @@
   }
 }
 
-
-
-
  @media (max-width: 540px) {
   .WorldIfApp {
     margin: 46px auto 0;
@@ -439,9 +426,6 @@
 
   .WorldIfApp .user-more-menu .submenu {
     left: -47px;
-  }
-  .WorldIfApp .log-in-btn {
- /*   width: calc(100% - 26px);*/
   }
 
   .WorldIfApp--header .mnv-ec-share-icons a {
